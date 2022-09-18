@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dyCalender/dycalender.css">
+    <link rel="stylesheet" href="glass.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="second">
+        <div class="card">
+            <span style="--i:0;"></span>
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+            <div class="glass">
+                <h2>Harsh Goyal <br><i>+91 9588549901</i></h2>
+            </div>
+        </div>
+    </div>
+    <div class="first">
+        <section class="section">
+            <div class="box">
+                <div class="container">
+                    <div id="dycalendar"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="dyCalender/dycalender.js"></script>
+<script>
+    dycalendar.draw({
+        target: '#dycalendar',
+        type: 'month',
+        dayformat: 'full',
+        monthformat: 'full',
+        highlighttargetdate: true,
+        prevnextbutton: 'show'
+    })
+</script>
+</html>
